@@ -154,6 +154,16 @@ fun:*MyFooBar*
   * Q: The PC printed in ASan stack traces is consistently off by 1?
   * A: This is not a bug but rather a design choice. It is hard to compute exact size of preceding instruction on CISC platforms. So ASan just decrements 1 which is enough for tools like addr2line or readelf to symbolize addresses.
 
+  * Q: I've ran with ASAN_OPTIONS=verbosity=1 and ASan tells something like
+{{{
+ ==30654== Parsed ASAN_OPTIONS: verbosity=1
+ ==30654== AddressSanitizer: failed to intercept 'memcpy'
+}}}
+  * A: This warning is false (see https://gcc.gnu.org/bugzilla/show_bug.cgi?id=58680 for details).
+
+  * Q: I've built my main executable with ASan. Do I also need to build shared libraries?
+  * A: ASan will work even if you rebuild just part of your program. But you'll have to rebuild all components to detect all errors.
+
 =Comments?=
 Send comments to address-sanitizer@googlegroups.com 
 or [https://plus.google.com/117014197169958493500 in Google+].
