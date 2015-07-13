@@ -143,9 +143,6 @@ ffmpeg's asan bot: http://fate.libav.org/x86_64-linux-clang-asan
 =bash=
 https://lists.gnu.org/archive/html/bug-bash/2015-06/msg00089.html
 
-=coreutils=
-https://debbugs.gnu.org/cgi/bugreport.cgi?bug=20998
-
 =webrtc=
   * http://code.google.com/p/webrtc/issues/detail?id=281
   * http://code.google.com/p/webrtc/issues/detail?id=282
@@ -230,6 +227,54 @@ http://www.mail-archive.com/vim_dev@googlegroups.com/msg15549.html
 
 =GNU Coreutils=
   * http://git.savannah.gnu.org/gitweb/?p=coreutils.git;a=commit;h=f940fece
+  * https://debbugs.gnu.org/cgi/bugreport.cgi?bug=20998
+
+=Unsorted=
+
+  * http://hg.dovecot.org/dovecot-2.2/rev/740935acc0f8
+  * http://core.tcl.tk/tk/tktview/b1534b438bc711e848ad7ade3642ce0a6323fe8e
+  * http://core.tcl.tk/tk/tktview/9bad630c3163b4b2ef8781089ae27058c957a428
+  * https://bugzilla.gnome.org/show_bug.cgi?id=751603
+  * https://bugzilla.gnome.org/show_bug.cgi?id=751631
+  * https://bugzilla.gnome.org/show_bug.cgi?id=751643
+  * https://bugzilla.gnome.org/show_bug.cgi?id=752191
+  * https://bugzilla.gnome.org/show_bug.cgi?id=751633
+  * https://savannah.gnu.org/bugs/index.php?45391
+  * https://github.com/radare/radare2/issues/2665
+  * https://github.com/radare/radare2/issues/2683
+  * https://github.com/radare/radare2/issues/2684
+  * https://github.com/radare/radare2/issues/2705
+  * https://github.com/radare/radare2/issues/2706
+  * https://github.com/radare/radare2/issues/2736 (cmd_zign, script)
+  * https://github.com/radare/radare2/issues/2737 (script, r_print_fill)
+  * https://github.com/radare/radare2/issues/2759 (r_reg_get_name_idx) (fixed)
+  * https://github.com/radare/radare2/issues/2760 (r_core_syscmd_ls) (fixed)
+  * https://github.com/radare/radare2/issues/2764 (r_num_calc) (fixed)
+  * https://github.com/radare/radare2/issues/2765 (r_str_escape_) (fixed)
+  * https://github.com/radare/radare2/issues/2795 (cmd_type) (fixed)
+  * https://github.com/radare/radare2/issues/2796 (cmd_write) (fixed)
+  * https://github.com/radare/radare2/issues/2797 (cmd_flag) (fixed)
+  * https://github.com/radare/radare2/issues/2806 (r_core_yank_hud_file) (fixed)
+  * https://github.com/radare/radare2/issues/2807 (cmd_open) (fixed)
+  * https://github.com/radare/radare2/issues/2808 (updateAddr) (fixed)
+  * https://github.com/radare/radare2/issues/2809 (r_core_magic_at, UAF) (fixed)
+  * https://github.com/radare/radare2/issues/2832 (r_mem_copyendian)
+  * https://github.com/radare/radare2/issues/2833 (r_wstr_clen) (fixed)
+  * https://github.com/radare/radare2/issues/2836 (r_str_glob) (fixed)
+  * https://github.com/radare/radare2/issues/2850 (cmd_search, fixed)
+  * https://github.com/radare/radare2/issues/2851 (core_anal_bytes, fixed)
+  * https://github.com/radare/radare2/issues/2852 (pdi, fixed)
+  * https://github.com/radare/radare2/issues/2853 (perform_disassembly, fixed)
+  * https://github.com/radare/radare2/issues/2854 (radare_compare, fixed)
+  * https://github.com/radare/radare2/issues/2855 (UAF, r_num_calc_index, fixed)
+  * https://github.com/radare/radare2/issues/2869 (heap overflow write, r_rprint_randomart, fixed)
+  * https://github.com/radare/radare2/issues/2870 (UNFIXED, core_anal_bytes again)
+  * https://github.com/radare/radare2/issues/2871 (pdi again, fixed)
+  * https://github.com/radare/radare2/issues/2872 (perform_disassebly again, fixed)
+  * https://github.com/radare/radare2/issues/2889 (UAF r_num_calc_index again, fixed)
+  * https://github.com/radare/radare2/issues/2909 (fixed, cmd_search again, fixed)
+  * https://github.com/radare/radare2/issues/2910 (r_core_write_op, fixed)
+  * https://bugs.freedesktop.org/show_bug.cgi?id=90784
 
 =Spec CPU 2006 =
 Use-after-free in 400.perlbench (a pointer is used after it is passed to `realloc`).
