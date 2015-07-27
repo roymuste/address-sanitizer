@@ -140,7 +140,7 @@ fun:*MyFooBar*
 
   * Q: Why didn't ASan report an obviously invalid memory access in my code?
   * A1: If your errors is too obvious, compiler might have already optimized it out by the time Asan runs.
-  * A2: Another option is accesses to global common symbols which can not be protected by Asan (you can use -fno-common to disable generation of common symbols).
+  * A2: Another, C-only option is accesses to global common symbols which are not be protected by Asan (you can use -fno-common to disable generation of common symbols).
 
   * Q: When I link my shared library with -fsanitize=address, it fails due to some undefined ASan symbols (e.g. __asan_init_v4)?
   * A: Most probably you link with -Wl,-z,defs or -Wl,--no-undefined. These flags don't work with ASan.
